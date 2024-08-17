@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".booking">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sambar"
+        android:layout_alignBottom="@+id/sambar"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="-608dp"
+        android:gravity="left"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="173dp"
+            android:layout_height="91dp"
+            app:srcCompat="@drawable/idly" />
+
+        <CheckBox
+            android:id="@+id/idly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="idly"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/book"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginRight="152dp"
+            android:layout_marginBottom="150dp"
+            android:text="PLACE ORDER" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginBottom="63dp"
+        android:text=""
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="170dp"
+        android:layout_height="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/sambarrice" />
+
+    <CheckBox
+        android:id="@+id/sambar"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="5dp"
+        android:text="sambar sadam"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="178dp"
+        android:layout_height="146dp"
+        android:layout_above="@+id/book"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="-7dp"
+        android:layout_marginRight="-7dp"
+        android:layout_marginBottom="152dp"
+        app:srcCompat="@drawable/briyani" />
+
+    <CheckBox
+        android:id="@+id/briyani"
+        android:layout_width="122dp"
+        android:layout_height="53dp"
+        android:layout_above="@+id/bill"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="-146dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="332dp"
+        android:layout_toEndOf="@+id/sambar"
+        android:layout_toRightOf="@+id/sambar"
+        android:text="briyani"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
